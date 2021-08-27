@@ -17,6 +17,16 @@ header img{border-radius: 50%;
     left: 42%;
     margin-left:0;
     margin-right:0;}
+#menu ul{border:3px;
+   position: absolute;
+     }
+header nav{
+    background-color: black;
+}
+#menu li{ display: inline;
+background-color: rgb(56, 56, 56);
+color: rgb(116, 124, 243);
+font-weight:600;}
 header{ 
     background: url('https://media-exp1.licdn.com/dms/image/C4E16AQFoFL-z_avlNg/profile-displaybackgroundimage-shrink_350_1400/0/1608067404675?e=1635379200&v=beta&t=3cjEgfNjri6otL2FDhe--y35eURuN6porBWgbrtQYW4');
     }
