@@ -44,6 +44,7 @@ header img {
 
 header nav {
     background-color: black;
+    text-align: center;
 }
 
 #menu li {
@@ -61,8 +62,14 @@ header {
     font-weight: 600;
 }
 
-#map {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer div#map {
     position: block;
-    height: 15%;
-    width: 15%;
+    bottom: 5px;
+    width: 20%;
+    height: 20%;
 }
