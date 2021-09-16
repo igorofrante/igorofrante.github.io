@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e696afd319.js" crossorigin="anonymous"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
     <link rel="shortcut icon" href="https://twemoji.maxcdn.com/2/svg/1f680.svg" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Curriculo Web - Igor Ofrante Dutra</title>
 </head>
 
@@ -21,23 +25,33 @@
         <h3>Graduando em Sistemas de Informação</h3>
         <nav>
             <ul id="menu">
-                <li>Resumo Pessoal</li>
-                <li>Principais Copetências</li>
-                <li>Histórico Acadêmico</li>
-                <li>Histórico Profissional</li>
-                <li>Contato</li>
+                <li>
+                    <a class="btn btn-primary" href="#resumo">Resumo Pessoal</a>
+                </li>
+                <li>
+                    <a class="btn btn-primary" href="#copetencias">Principais Copetências</a>
+                </li>
+                <li>
+                    <a class="btn btn-primary" href="#historicoA">Histórico Acadêmico</a>
+                </li>
+                <li>
+                    <a class="btn btn-primary" href="#historicoP">Histórico Profissional</a>
+                </li>
+                <li>
+                    <a class="btn btn-danger" href="#contato" role="button">Contato</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div name="resumo">
+        <div name="resumo" id="resumo">
             <h4>Resumo Pessoal</h4>
-            <p>Estagiário de TI, 26 anos, amante de tecnologia, cursando Sistemas de Informação, com o objetivo de desenvolver meu potencial com ética e qualidade, contribuir ativamente no planejamento estabelecimento de metas, ampliando assim meus conhecimentos
+            <p>Estagiário de TI, 26 anos, amante de tecnologia, cursando Sistemas de Informação, com o objetivo de desenvolver meu potencial com ética e qualidade, contribuir ativamente no planejamento e estabelecimento de metas, ampliando assim meus conhecimentos
                 e experiências no mercado de trabalho.</p>
         </div>
 
-        <div name="copetencias">
+        <div name="copetencias" id="copetencias">
             <h4>Principais Copetências</h4>
             <ul>
                 <li>Manutenção de computadores e dispositivos móveis.</li>
@@ -51,7 +65,7 @@
             </ul>
         </div>
 
-        <div name="historicoA">
+        <div name="historicoA" id="historicoA">
             <h4>Histórico Acadêmico</h4>
             <table class="histA">
                 <tbody>
@@ -74,9 +88,9 @@
             </table>
         </div>
 
-        <div name="historicoP">
+        <div name="historicoP" id="historicoP">
             <h4>Histórico Profissional</h4>
-            <table class="HistP">
+            <table class=" HistP ">
                 <tbody>
                     <tr>
                         <td class="Inst">
@@ -110,25 +124,12 @@
     </main>
     <footer>
         <h4>Contato</h4>
-        <div id="map"></div>
-        <script>
-            // TO MAKE THE MAP APPEAR YOU MUST
-            // ADD YOUR ACCESS TOKEN FROM
-            // https://account.mapbox.com
-            mapboxgl.accessToken = 'pk.eyJ1IjoiaWdvcm9ncmFudGUiLCJhIjoiY2tzdG42czczMDR2ZDJ2cXU0MTh1Z3hxbyJ9.YHfWVUla8e5koPYGeMsi0A';
-            const map = new mapboxgl.Map({
-                container: 'map', // container ID
-                style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                center: [-40.393660, -20.346449], // starting position [lng, lat]
-                zoom: 10 // starting zoom
-            });
-        </script>
-        <div name="contato">
-            <p><i class="fas fa-house-user"></i> Endereço Residencial: Cruzeiro do Sul, Cariacica, Espírito Santo - 29144-011.
+        <div name="contato" id="contato">
+            <p><i class=" fas fa-house-user"></i> Endereço Residencial: Cruzeiro do Sul, Cariacica, Espírito Santo - 29144-011.
             </p>
-            <p><i class="fas fa-phone-square-alt"></i> <a href="tel:027998594897">(27) 9-9859-4897</a></p>
-            <p><i class="fas fa-envelope-open-text"></i> <a href="mailto:igorofrante@gmail.com">igorofrante@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/igorofrante/">igorofrante</a> </p>
+            <p><i class="fas fa-phone-square-alt"></i> <a href="tel:027998594897 ">(27) 9-9859-4897</a></p>
+            <p><i class="fas fa-envelope-open-text"></i> <a href="mailto:igorofrante@gmail.com ">igorofrante@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/igorofrante/ ">igorofrante</a> </p>
         </div>
     </footer>
 </body>
