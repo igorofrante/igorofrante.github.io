@@ -1,31 +1,28 @@
-import {colors} from "./colors.js";
+import {colors} from "./colors.js"; //importa vetor de cores
 
-document.getElementById("iniciar").addEventListener('click', iniciarJogo);
+document.getElementById("iniciar").addEventListener('click', iniciarJogo); //insere o evento no botão de iniciar o jogo
 
 
 function iniciarJogo(){
     var cores = colors(); 
-    
     var vetorCores = [];
+    var bool; // utilizado no loop
+    var corUsuario; //cor escolhida pelo usuário
     
     while(vetorCores.length < 10){
         vetorCores[vetorCores.length] = cores[Math.floor(Math.random() * (cores.length - 1)) + 1];
         vetorCores = [...new Set(vetorCores)];
     }
+    //preenche o vetor de cores randomicamente e impede a duplicidade de valores.
     
-    vetorCores.sort();
+    vetorCores.sort(); // ordena as cores alfabeticamente 
     
-    var corEscolhida = Math.floor(Math.random() * (vetorCores.length - 1)) + 1;
-    
-    var vetorCores2 = vetorCores.map(vetorCores => vetorCores.toUpperCase());
-    
-    var bool = false;
-    
-    var corUsuario;
-    
+    var corEscolhida = Math.floor(Math.random() * (vetorCores.length - 1)) + 1; //escolhe aleatóriamente uma posição do vetor cores
+    var vetorCores2 = vetorCores.map(vetorCores => vetorCores.toUpperCase()); //cria um novo vetor cores para MAISCULO.
+          
     while (!bool){
         corUsuario = prompt("Eu estou pensando em uma dessas cores: \n" + vetorCores.join(', ') + "\nEm qual delas eu estou pensando?\n");
-        corUsuario = corUsuario.toUpperCase();
+        corUsuario = corUsuario.toUpperCase(); //cor do usuário para MAIUSCULO
         if (vetorCores2.indexOf(corUsuario)<0){
             alert("Cor inexistente");
         }else{
