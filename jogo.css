@@ -1,0 +1,21 @@
+header{
+    text-align: center;  
+}
+
+
+div{
+    text-align: center;
+    display: block;
+    top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 15%;
+    background-color: azure;
+    padding:5px;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+}
