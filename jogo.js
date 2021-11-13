@@ -26,7 +26,7 @@ function iniciarJogo(){
     while (!bool){
         corUsuario = prompt("Eu estou pensando em uma dessas cores: \n" + vetorCores.join(', ') + "\nEm qual delas eu estou pensando?\n");
         corUsuario = corUsuario.toUpperCase();
-        if (vetorCores2.indexOf(corUsuario)<1){
+        if (vetorCores2.indexOf(corUsuario)<0){
             alert("Cor inexistente");
         }else{
             if(corUsuario == vetorCores2[corEscolhida]){
