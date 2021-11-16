@@ -40,7 +40,7 @@ function iniciarJogo() {
                 } else {
                     let res = corUsuario.localeCompare(vetorCores2[corEscolhida])
                     let dica = "Dica: ";
-                    if (res - 1) {
+                    if (res == -1) {
                         dica += "a cor escolhida é alfabeticamente maior do que a que você escolheu"
                     } else {
                         dica += "a cor escolhida é alfabeticamente menor do que a que você escolheu"
