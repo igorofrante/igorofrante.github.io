@@ -39,11 +39,11 @@ function iniciarJogo() {
                     document.getElementById("msg").innerHTML = `A cor é: ${vetorCores[corEscolhida]}`;
                 } else {
                     let res = corUsuario.localeCompare(vetorCores2[corEscolhida])
-                    let dica = "Dica: ";
+                    let dica = "Dica: a cor escolhida é alfabeticamente ";
                     if (res == -1) {
-                        dica += "a cor escolhida é alfabeticamente maior do que a que você escolheu"
+                        dica += "maior do que a que você escolheu"
                     } else {
-                        dica += "a cor escolhida é alfabeticamente menor do que a que você escolheu"
+                        dica += "menor do que a que você escolheu"
                     }
                     vidas--;
                     alert(`Desculpe! Sua resposta não está correta!\n${dica}\nPor favor tente novamente.`);
